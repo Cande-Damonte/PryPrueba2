@@ -102,5 +102,15 @@ namespace PryPrueba2
                 lblEstado.ForeColor = Color.Green;
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVerContra_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
