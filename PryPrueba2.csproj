@@ -95,5 +95,11 @@
   <ItemGroup>
     <None Include="Resources\LOGO DIGITALFARMA1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

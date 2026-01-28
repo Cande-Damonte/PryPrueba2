@@ -51,5 +51,44 @@ namespace PryPrueba2
             // Ocultar el formulario actual de ingreso
             this.Hide();
         }
+
+        // --- LÓGICA PARA MAIL (Agregá estos eventos en el rayito del diseñador) ---
+        private void txtMail_Enter(object sender, EventArgs e)
+        {
+            if (txtMail.Text == "Mail")
+            {
+                txtMail.Text = "";
+                txtMail.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtMail_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtMail.Text))
+            {
+                txtMail.Text = "Mail";
+                txtMail.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtContra_Enter(object sender, EventArgs e)
+        {
+            if (txtContra.Text == "Contraseña")
+            {
+                txtContra.Text = "";
+                txtContra.ForeColor = Color.Black;
+                txtContra.UseSystemPasswordChar = true; // Activa los puntitos al escribir
+            }
+        }
+
+        private void txtContra_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtContra.Text))
+            {
+                txtContra.Text = "Contraseña";
+                txtContra.ForeColor = Color.Gray;
+                txtContra.UseSystemPasswordChar = false; // Muestra la palabra "Contraseña"
+            }
+        }
     }
 }

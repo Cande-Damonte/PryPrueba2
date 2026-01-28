@@ -63,6 +63,16 @@ namespace PryPrueba2.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hide {
+            get {
+                object obj = ResourceManager.GetObject("hide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO_DIGITALFARMA {
             get {
                 object obj = ResourceManager.GetObject("LOGO DIGITALFARMA", resourceCulture);
@@ -76,6 +86,16 @@ namespace PryPrueba2.Properties {
         internal static System.Drawing.Bitmap LOGO_DIGITALFARMA1 {
             get {
                 object obj = ResourceManager.GetObject("LOGO DIGITALFARMA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap show {
+            get {
+                object obj = ResourceManager.GetObject("show", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

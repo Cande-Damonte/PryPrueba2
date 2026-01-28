@@ -113,7 +113,6 @@
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(496, 43);
             this.txtMail.TabIndex = 21;
-            this.txtMail.Text = "Mail";
             // 
             // txtContra
             // 
@@ -125,7 +124,6 @@
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(496, 43);
             this.txtContra.TabIndex = 20;
-            this.txtContra.Text = "Contraseña";
             // 
             // pctLogo
             // 
