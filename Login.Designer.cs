@@ -44,7 +44,11 @@
             this.lblEstado = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.pcbContra = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.progressBarContra = new System.Windows.Forms.ProgressBar();
+            this.lblEstado = new System.Windows.Forms.Label();
             this.pctLogo = new System.Windows.Forms.PictureBox();
+            this.btnVerContra = new System.Windows.Forms.Button();
             this.pnlCrearCuenta.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbContra)).BeginInit();
@@ -101,6 +105,8 @@
             this.txtContra.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContra.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.txtContra.Location = new System.Drawing.Point(204, 308);
+            this.txtContra.Location = new System.Drawing.Point(204, 308);
+            this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(496, 37);
             this.txtContra.TabIndex = 6;
@@ -146,6 +152,11 @@
             this.LnkPolitica.Size = new System.Drawing.Size(499, 41);
             this.LnkPolitica.TabIndex = 9;
             this.LnkPolitica.TabStop = true;
+            this.LnkPolitica.Text = "Al crear una cuenta significa que está de acuerdo con nuestra  Politica de Privac" +
+    "idad y Términos de Servicio.";
+            this.LnkPolitica.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LnkPolitica.UseCompatibleTextRendering = true;
+            // 
             this.LnkPolitica.Text = "Al crear una cuenta significa que está de acuerdo con nuestra  Politica de Privac" +
     "idad y Términos de Servicio.";
             this.LnkPolitica.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,8 +222,16 @@
             this.lblEstado.Size = new System.Drawing.Size(183, 21);
             this.lblEstado.TabIndex = 16;
             this.lblEstado.Text = "Contraseña insegura";
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(808, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 39);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Ingresar";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // txtNombre
+            // progressBarContra
             // 
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.ForeColor = System.Drawing.SystemColors.WindowFrame;
@@ -223,8 +242,15 @@
             this.txtNombre.TabIndex = 5;
             this.txtNombre.Enter += new System.EventHandler(this.txtNombre_Enter);
             this.txtNombre.Leave += new System.EventHandler(this.txtNombre_Leave);
+            this.progressBarContra.Location = new System.Drawing.Point(205, 365);
+            this.progressBarContra.Name = "progressBarContra";
+            this.progressBarContra.Size = new System.Drawing.Size(496, 11);
+            this.progressBarContra.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.progressBarContra.TabIndex = 15;
+            this.progressBarContra.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // pcbContra
+            // lblEstado
             // 
             this.pcbContra.Image = global::PryPrueba2.Properties.Resources.show;
             this.pcbContra.Location = new System.Drawing.Point(663, 308);
@@ -234,6 +260,12 @@
             this.pcbContra.TabIndex = 18;
             this.pcbContra.TabStop = false;
             this.pcbContra.Click += new System.EventHandler(this.pcbContra_Click);
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Location = new System.Drawing.Point(522, 382);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(183, 21);
+            this.lblEstado.TabIndex = 16;
+            this.lblEstado.Text = "Contraseña insegura";
             // 
             // pctLogo
             // 
@@ -254,9 +286,13 @@
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.pctLogo);
             this.Controls.Add(this.LnkPolitica);
+            this.Controls.Add(this.btnVerContra);
+            this.Controls.Add(this.pctLogo);
+            this.Controls.Add(this.LnkPolitica);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.progressBarContra);
             this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblYaTienesCuenta);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblCrearCuenta);
@@ -295,10 +331,14 @@
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.ProgressBar progressBarContra;
         private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBarContra;
+        private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.PictureBox pctLogo;
         private System.Windows.Forms.Label lblBienvenido;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.PictureBox pcbContra;
+        private System.Windows.Forms.Button btnVerContra;
     }
 }
