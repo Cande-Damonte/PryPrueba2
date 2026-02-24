@@ -215,6 +215,7 @@
             this.lblEstado.Text = "Contraseña insegura";
             // 
             // txtNombre
+            // progressBarContra
             // 
             // 
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,6 +238,7 @@
             this.progressBarContra.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // pcbContra
+            // lblEstado
             // 
             // 
             this.pcbContra.Image = global::PryPrueba2.Properties.Resources.show;
